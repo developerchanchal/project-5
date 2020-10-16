@@ -1,0 +1,712 @@
+/*********************************************************************************
+
+    Template Name: Trydo Html Creative Agency Template
+    Author: Chanchal Biswas
+    Author URL: developerchanchal.github.io/profile
+    Description: One Page , Multi Parallax Template
+    Tags: one page, multi page, multipurpose, parallax, creative, html5
+
+	Note: This is style css.
+
+**********************************************************************************/
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.main-h1 {
+    font-weight: 700;
+    font-size: 3.4rem;
+}
+.main-p {
+    line-height: 30px;
+    color: rgba(29, 29, 36, 0.75);
+    font-size: 1rem;
+}
+.main-btn {
+    background: #F2123B;
+    color: white;
+    font-size: 1em;
+    padding: .7em 1.5em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border: 1px solid #F2123B;
+    transition: all .3s;
+}
+.main-btn:hover {
+    transform: translateY(-5px);
+    background: white;
+    color: #F2123B;
+}
+.main-h2 {
+    font-size: .85em;
+    position: relative;
+    transition: all .3s ease-in-out;
+    display: inline-block;
+    cursor: pointer;
+}
+.main-h2:hover{
+    color: #F2123B;
+}
+.main-h2::after {
+    content: "";
+    position: absolute;
+    background: #F2123B;
+    bottom: -45%;
+    left: 0;
+    height: .1em;
+    width: 2em;
+    transition: all .3s ease-in-out;
+}
+.main-h2:hover::after {
+    width: 100%;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    display: block;
+}
+.br {
+    height: 1px;
+    width: 100%;
+    background-color: #ffe7eb;
+}
+.navbar-dark .navbar-toggler {
+    color: black;
+    border-color: black;
+}
+.navbar-toggler:focus, .navbar-toggler:hover {
+    border-color: #fe1540;
+}
+
+
+
+
+/* Header Section */
+.header-nav{
+    background-color: white;
+}
+.header-nav .nav-item a {
+    color: #1d1d24 !important;
+    font-weight: 500;
+    font-size: .9em;
+    margin-right: 1em;
+    transition: all .3s;
+}
+.header-nav img {
+    width: 90%;
+}
+.header-nav .nav-item a:hover {
+    color: #F2123B !important;
+}
+.header-nav .nav-item .active {
+    color: #F2123B !important;
+}
+.header-nav .main-btn {
+    color: #1d1d24;
+    background: white;
+    border: 2px solid #89898a;
+    font-size: .8em;
+    font-weight: 400;
+    padding: .6em 1.5em;
+}
+.header-nav .main-btn:hover {
+    background: #F2123B;
+    color: white;
+    border-color: #F2123B;
+}
+
+/* Header Slider Section */
+.header-slider {
+    background: url(../img/bg-image-30.jpg) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+.header-slider h1 {
+    text-align: right;
+    font-size: 5.9em;
+    font-weight: 800;
+    color: white;
+    margin-top: 2em;
+}
+.header-slider p {
+    text-align: right;
+    color: #c6c9d8;
+    font-size: 1.1em;
+    line-height: 40px;
+    font-weight: 300;
+    width: 64%;
+    margin-left: auto;
+}
+.header-slider .main-btn {
+    float: right;
+    margin-top: 1.5em;
+    margin-bottom: 7rem;
+}
+
+/* Features Section */
+.feature-card {
+    border-radius: 3%;
+    transition: all .6s;
+}
+.feature-card:hover{
+    border-radius: 3%;
+    transition: all .6s;
+    transform: translateY(-5px);
+}
+.feature-card:hover i{
+    color: white;
+}
+.feature-card:hover h3{
+    color: white;
+}
+.feature-card:hover p{
+    color: white;
+}
+.feature-card:after {
+    background: linear-gradient(to right,#F51A15 50%,#EF0A5F 100%);
+    box-shadow: 0 10px 25px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 3%;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    transition: all .3s;
+    opacity: 0;
+}
+.feature-card:hover:after {
+    opacity: 1;
+}
+.feature-card i {
+    color: #F2123B;
+    font-size: 3em;
+}
+.feature-card h3 {
+    font-weight: 500;
+    font-size: 1.3em;
+    margin-top: 1em;
+}
+.feature-card p {
+    color: rgba(29, 29, 36, 0.75);
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+/* Service Section */
+.service-card img {
+    border-radius: 2%;
+    width: 100%;
+}
+.service-card h4 {
+    font-size: 1em;
+    margin-top: 2em;
+    font-weight: 600;
+}
+.service-card p {
+    font-size: .9em;
+    margin-top: 1em;
+}
+
+/* Count Section */
+.count-section{
+    background: url("../img/bg-image-17.jpg") no-repeat center center;
+    position: relative;
+}
+.count-section::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.count-section .col-md-4{
+    z-index: 2;
+}
+.count-section h1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: 1em;
+}
+.count-section h1 span {
+    color: white;
+    font-size: .4em !important;
+    display: inline-block;
+    position: absolute;
+}
+.count-section p {
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+/* Working Section */
+
+.working-section .main-p {
+    margin-top: 1em;
+}
+.working-p {
+    border-bottom: 2px solid #F2123B;
+    width: fit-content;
+    font-size: .9em;
+    font-weight: 500;
+    margin-bottom: .5em;
+    margin-top: 2em;
+}
+.working-section img{
+    width: 100%;
+    border-radius: 2%;
+    box-shadow: 0px 0px 23px 3px #e9e4e4;
+}
+.working-section ul{
+    margin-bottom: 4em;
+    margin-top: 2em;
+}
+.working-section ul li {
+    font-size: .9em;
+    font-weight: 500;
+    margin-bottom: 1em;
+    position: relative;
+}
+.working-section ul li:after {
+    content: "";
+    position: absolute;
+    width: 9%;
+    height: .1em;
+    left: 0;
+    bottom: 0;
+    background-color: #F2123B;
+}
+
+/* Team Section */
+
+.team-section p {
+    width: 50%;
+    margin: auto;
+    margin-top: 1.5em;
+}
+.team-card img {
+    width: 100%;
+    border-radius: 2%;
+    box-shadow: 0 25px 65px rgba(0, 0, 0, 0.1);
+}
+.team-card h6 {
+    font-size: .9em;
+    margin-top: 2em;
+    font-weight: 600;
+}
+.team-card p {
+    font-size: .88em;
+    font-weight: 300;
+    margin-left: 0;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+.team-card ul {
+    display: flex;
+}
+.team-card ul li i {
+    color: black;
+    font-size: .8em;
+    padding-right: 1em;
+    transition: all .3s;
+}
+.team-card ul li:hover i {
+    color: #F2123B; 
+}
+
+/* About Section */
+
+.about-section p {
+    margin-top: 1em;
+}
+.about-detail h5 {
+    font-weight: 700;
+    font-size: 1.3em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.about-detail ul li {
+    color: rgb(110 110 110 / 75%);
+    font-size: .95em;
+    line-height: 1.9em;
+}
+.about-detail ul li i {
+    color: #F2123B;
+    margin-right: .6em;
+}
+
+/* Company Section */
+
+.company-logo {
+    border: 1px solid #f7f0f0;
+    transition: all .3s ease-in-out;
+}
+.company-logo:hover{
+    border-radius: 2%;
+    transform: scale(1.1);
+    background: #ecf0f1;
+}
+.company-logo img {
+    width: 37%;
+    display: block;
+    margin: auto;
+    padding: 3.5em 0;
+}
+
+/* Plan Section */
+
+.plan-section .main-p {
+    margin-top: 1.5em;
+    width: 50%;
+    margin: auto;
+}
+.plan-card {
+    border: 2px solid #F2123B;
+    padding: 1em;
+    border-radius: 2%;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+.plan-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,#F51A15 50%,#EF0A5F 100%);
+    border-radius: 2%;
+    z-index: -3;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+.plan-card:hover::before{
+    opacity: 1;
+    visibility: visible;
+}
+.plan-card h6 {
+    font-weight: 600;
+    margin-top: 1.4em;
+}
+.plan-card:hover h6 {
+    color: white;
+}
+.plan-card h1 {
+    color: #F71D0B;
+    font-size: 5.6em;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: .2em;
+}
+.plan-card:hover  h1{
+    color: white;
+}
+.plan-card p {
+    color: #ff0450;
+    font-size: .8em;
+    margin-bottom: 3em;
+}
+.plan-card:hover  p{
+    color: white;
+}
+.plan-card ul {
+    margin-top: 3em;
+    margin-left: 2em;
+}
+.plan-card ul li {
+    line-height: 2em;
+    color: grey;
+    font-size: .91em;
+}
+.plan-card:hover  ul li{
+    color: white;
+}
+.plan-card ul li i {
+    color: #F71D0B;
+    padding-right: .8em;
+}
+.plan-card:hover  ul li i{
+    color: white;
+}
+.plan-card div .main-btn {
+    margin-top: 3em;
+    background: white;
+    color: #F2123B;
+    font-size: .75em;
+    border: 2px solid #F2123B;
+    margin-bottom: 1em;
+}
+
+/* News Section */
+.news-section .main-p{
+    margin-top: 1.5em;
+    width: 50%;
+    margin: auto;
+}
+.news-div{
+    border-radius: 2%;
+    position: relative;
+    overflow: hidden;
+}
+.news-div::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom ,#EF0C57 40%,grey 100%);
+    transition: all .3s;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+}
+.news-div img{
+    width: 100%;
+    border-radius: 2%;
+    transition: all .3s;
+}
+.news-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2em;
+    color: white;
+    transition: all .3s;
+    z-index: 5;
+}
+.news-text p {
+    color: #d6d6d6;
+    font-size: .8em;
+}
+.news-text h4 {
+    font-size: 1.4em;
+    line-height: 1.6em;
+}
+.news-btn {
+    position: absolute;
+    bottom: -17%;
+    left: 0;
+    padding: 2em;
+    z-index: 5;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+.news-div:hover img{
+    transform: scale(1.1);
+}
+.news-div:hover .news-text {
+    transform: translateY(-32%);
+}
+.news-div:hover .news-btn {
+    opacity: 1;
+    visibility: visible;
+    bottom: 0;
+}
+.news-div:hover::after{
+    opacity: .5;
+    visibility: visible;
+}
+
+/* Let Work Section */
+.let-work-section{
+    background: linear-gradient(to right,#F51A15 40%,#EF0A5F 100%);
+    color: white;
+}
+.let-work-section p {
+    letter-spacing: .2em;
+    font-size: .9em;
+    margin-top: 4em;
+}
+.let-work-section h1 {
+    font-weight: 800;
+    font-size: 4.1em;
+}
+.let-work-section a {
+    border-color: white;
+    margin-top: 2em;
+    background: transparent;
+    border: 2px solid;
+    margin-bottom: 2em;
+}
+
+/* Footer Section */
+.footer-section{
+    background-color: #1E1F25;
+    box-sizing: border-box;
+}
+.footer-section ul {
+    display: inline-flex;
+    height: auto;
+    margin: 0;
+}
+.footer-section ul li {
+    display: flex;
+}
+.footer-section ul li a {
+    color: grey;
+    padding: .8em 1em;
+    border: 2px solid grey;
+    margin-right: 1em;
+    border-radius: 50%;
+    transition: all .3s;
+}
+.footer-section ul li:hover a {
+    color: white;
+    background-color: #EE024B;
+    border-color: #EE024B;
+    transform: translateY(-5%);
+}
+.footer-section p{
+    color: grey;
+}
+
+
+
+
+/* Responsive CSS */
+
+@media all and (max-width:992px){}
+@media all and (max-width:1024px){
+    .count-section h1 {
+        font-size: 3rem;
+    }
+    .count-section p {
+        font-size: .8em;
+    }
+    .let-work-section h1 {
+        font-size: 3.5em;
+    }
+}
+@media all and (max-width:992px){
+    .header-nav .main-btn {
+        margin-left: 0 !important;
+    }
+    .working-section img {
+        margin-top: 4em;
+    }
+    .plan-card {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+    .news-section .main-p {
+        width: 100%;
+        margin-top: 1.5em;
+    }
+}
+@media all and (max-width:768px){
+    
+    .header-slider h1 {
+        font-size: 5em;
+        text-align: center;
+    }
+    .header-slider p {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+    .header-slider .main-btn {
+        width: fit-content;
+        display: block;
+        margin: auto;
+        margin-top: 2em;
+        float: unset;
+        margin-bottom: 7rem;
+    }
+    .main-h1 {
+        font-size: 3rem;
+    }
+    .service-card {
+        margin-top: 2em;
+    }
+    .service-card h4 {
+        margin-top: 1em;
+        font-size: .9em;
+    }
+    .service-card p {
+        font-size: .8em;
+    }
+    .service-card .main-h2 {
+        font-size: .8em;
+    }
+    .count-section h1 {
+        font-size: 2.5rem;
+    }
+    .count-section p {
+        font-size: .6em;
+        width: 65%;
+        margin: auto;
+    }
+    .plan-section .main-p {
+        width: 100%;
+        margin-top: 1.5em;
+    }
+    .news-div {
+        margin-bottom: 2em;
+    }
+}
+@media all and (max-width:576px){
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+    .header-slider h1 {
+        font-size: 3em;
+    }
+    .header-slider p {
+        line-height: 30px;
+        font-size: .9em;
+        margin-top: 2em;
+    }
+    .service-card {
+        width: 100%;
+        margin: auto;
+        margin-top: 3em;
+    }
+    .main-h1 {
+        font-size: 2.1rem;
+    }
+    .main-p {
+        font-size: .9rem;
+    }
+    .team-section p {
+        width: 100%;
+        margin: auto;
+        margin-top: 1.5em;
+    }
+    .about-section .col-md-6 img {
+        width: 80% !important;
+        margin-top: 2em;
+        border-radius: 2%;
+    }
+    .let-work-section h1 {
+        font-size: 2.5em;
+    }
+    .footer-section .row {
+        padding: 0 !important;
+    }
+    .footer-section img {
+        margin-bottom: 2em;
+    }
+    .footer-section ul {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    .footer-section ul li a {
+        font-size: .6em;
+    }
+    .footer-section p {
+        font-size: .8em;
+    }
+}
